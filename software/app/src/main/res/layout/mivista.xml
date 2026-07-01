@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiControlador">
+
+    <TextView
+        android:id="@+id/textoGrande"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="¿Qué deseas hacer?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- LOS 4 BOTONES GRANDES -->
+    <Button
+        android:id="@+id/botonDatos"
+        android:layout_width="187dp"
+        android:layout_height="277dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FA6B6B"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoGrande" />
+
+    <Button
+        android:id="@+id/botonAvion"
+        android:layout_width="187dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FA6B6B"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoGrande" />
+
+    <Button
+        android:id="@+id/botonSilencio"
+        android:layout_width="187dp"
+        android:layout_height="277dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FA6B6B"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonDatos" />
+
+    <Button
+        android:id="@+id/botonVolumen"
+        android:layout_width="187dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FA6B6B"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonAvion" />
+
+    <!-- TEXTOS PRINCIPALES DE LOS BOTONES -->
+    <TextView
+        android:id="@+id/textDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Datos móviles"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/botonDatos"
+        app:layout_constraintStart_toStartOf="@+id/botonDatos"
+        app:layout_constraintTop_toTopOf="@+id/botonDatos" />
+
+    <TextView
+        android:id="@+id/textAvion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Modo Avion"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/botonAvion"
+        app:layout_constraintStart_toStartOf="@+id/botonAvion"
+        app:layout_constraintTop_toTopOf="@+id/botonAvion" />
+
+    <TextView
+        android:id="@+id/textSilencio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Modo silencio"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/botonSilencio"
+        app:layout_constraintStart_toStartOf="@+id/botonSilencio"
+        app:layout_constraintTop_toTopOf="@+id/botonSilencio" />
+
+    <TextView
+        android:id="@+id/textVolumen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Volumen máximo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/botonVolumen"
+        app:layout_constraintStart_toStartOf="@+id/botonVolumen"
+        app:layout_constraintTop_toTopOf="@+id/botonVolumen" />
+
+    <!-- TEXTOS "PULSA PARA PONER" -->
+    <TextView
+        android:id="@+id/textPulsaDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="pulsa para poner"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/botonDatos"
+        app:layout_constraintEnd_toEndOf="@+id/botonDatos"
+        app:layout_constraintStart_toStartOf="@+id/botonDatos" />
+
+    <TextView
+        android:id="@+id/textPulsaDatos2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="pulsa para poner"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/botonAvion"
+        app:layout_constraintEnd_toEndOf="@+id/botonAvion"
+        app:layout_constraintStart_toStartOf="@+id/botonAvion" />
+
+    <TextView
+        android:id="@+id/textPulsaDatos3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="pulsa para poner"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/botonSilencio"
+        app:layout_constraintEnd_toEndOf="@+id/botonSilencio"
+        app:layout_constraintStart_toStartOf="@+id/botonSilencio" />
+
+    <TextView
+        android:id="@+id/textPulsaDatos4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="pulsa para poner"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/botonVolumen"
+        app:layout_constraintEnd_toEndOf="@+id/botonVolumen"
+        app:layout_constraintStart_toStartOf="@+id/botonVolumen" />
+
+    <!-- IMÁGENES / ICONOS PERFECTAMENTE CENTRADOS EN CADA CUADRANTE -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="96dp"
+        android:layout_height="83dp"
+        android:src="@drawable/icono_datos"
+        app:layout_constraintBottom_toTopOf="@+id/textPulsaDatos"
+        app:layout_constraintEnd_toEndOf="@+id/botonDatos"
+        app:layout_constraintStart_toStartOf="@+id/botonDatos"
+        app:layout_constraintTop_toBottomOf="@+id/textDatos" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icono_avion"
+        app:layout_constraintBottom_toTopOf="@+id/textPulsaDatos2"
+        app:layout_constraintEnd_toEndOf="@+id/botonAvion"
+        app:layout_constraintStart_toStartOf="@+id/botonAvion"
+        app:layout_constraintTop_toBottomOf="@+id/textAvion" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="77dp"
+        android:layout_height="73dp"
+        android:src="@drawable/icono_silencio"
+        app:layout_constraintBottom_toTopOf="@+id/textPulsaDatos3"
+        app:layout_constraintEnd_toEndOf="@+id/botonSilencio"
+        app:layout_constraintStart_toStartOf="@+id/botonSilencio"
+        app:layout_constraintTop_toBottomOf="@+id/textSilencio" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="72dp"
+        android:src="@drawable/icono_volumen"
+        app:layout_constraintBottom_toTopOf="@+id/textPulsaDatos4"
+        app:layout_constraintEnd_toEndOf="@+id/botonVolumen"
+        app:layout_constraintStart_toStartOf="@+id/botonVolumen"
+        app:layout_constraintTop_toBottomOf="@+id/textVolumen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
